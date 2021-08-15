@@ -98,7 +98,7 @@ h1 {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 475px) {
   p {
@@ -221,7 +221,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
-  font-size: 5rem;
+  font-size: 7rem;
   list-style-type: none;
 }
 @media only screen and (max-width: 475px) {
@@ -268,7 +268,7 @@ nav img {
 @media only screen and (max-width: 475px) {
   .hero h1 {
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3.75rem;
   }
 }
 .hero p {
@@ -276,13 +276,13 @@ nav img {
 }
 @media only screen and (max-width: 475px) {
   .hero p {
-    padding: 0rem;
+    padding: 0 0 5rem 0;
   }
 }
 @media only screen and (max-width: 475px) {
   .hero img {
-    width: 45rem;
-    height: 35rem;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -336,9 +336,9 @@ nav img {
     margin: auto;
   }
   .mainFeature img:not(:last-child) {
-    width: 45rem;
-    height: 35rem;
-    margin-bottom: 10rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5rem;
   }
 }
 
