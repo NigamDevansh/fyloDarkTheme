@@ -5,6 +5,10 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20rem !important;
+  @include responsive(phone) {
+    margin-top: 0;
+  }
 }
 ul {
   list-style: none;
@@ -71,5 +75,10 @@ li {
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
+  }
+}
+h4 {
+  @include responsive(phone) {
+    margin-top: 10rem;
   }
 }

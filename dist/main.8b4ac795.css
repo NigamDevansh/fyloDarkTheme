@@ -49,7 +49,7 @@
   background-image: linear-gradient(to right, #65e2d9 0%, #339ecc 51%, #65e2d9 100%);
   padding: 1rem 6rem;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
@@ -98,7 +98,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 @media only screen and (max-width: 475px) {
   p {
@@ -114,6 +114,12 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20rem !important;
+}
+@media only screen and (max-width: 475px) {
+  .row {
+    margin-top: 0;
+  }
 }
 
 ul {
@@ -192,6 +198,12 @@ li {
     width: 100%;
   }
 }
+@media only screen and (max-width: 475px) {
+  h4 {
+    margin-top: 10rem;
+  }
+}
+
 header {
   background-color: #1c2431;
   background-image: url(/bg-curvy-desktop.b3534639.svg);
@@ -204,7 +216,6 @@ header {
   header {
     height: 90vh;
     background-position-y: 100%;
-    padding-bottom: 0rem;
   }
 }
 
@@ -258,7 +269,7 @@ nav img {
 @media only screen and (max-width: 475px) {
   .hero {
     padding: 0rem 5rem;
-    width: 100%;
+    width: 90%;
   }
 }
 .hero h1 {
@@ -269,22 +280,21 @@ nav img {
 @media only screen and (max-width: 475px) {
   .hero h1 {
     font-size: 3rem;
-    line-height: 4rem;
+    line-height: 3.75rem;
   }
 }
 .hero p {
-  padding: 0 15rem;
+  padding: 0rem 20rem 5rem 20rem;
 }
 @media only screen and (max-width: 475px) {
   .hero p {
-    padding: 0 0 5rem 0;
+    padding: 2.5rem 5rem 5rem 5rem;
   }
 }
 @media only screen and (max-width: 475px) {
   .hero img {
     width: 100%;
     height: 100%;
-    margin: 4rem 0;
   }
 }
 
@@ -414,14 +424,6 @@ nav img {
     margin-bottom: 5rem !important;
   }
 }
-.review p {
-  line-height: 1.75rem;
-}
-@media only screen and (max-width: 475px) {
-  .review p {
-    line-height: 2rem;
-  }
-}
 .review span {
   display: flex;
   align-items: center;
@@ -455,7 +457,7 @@ nav img {
 }
 
 .signupForm {
-  margin-bottom: -15%;
+  margin-bottom: -25%;
   background-color: #202a3c;
   padding: 4rem 5rem;
   border-radius: 10px;
