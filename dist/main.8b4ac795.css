@@ -202,6 +202,7 @@ header {
 }
 @media only screen and (max-width: 475px) {
   header {
+    height: 90vh;
     background-position-y: 100%;
     padding-bottom: 0rem;
   }
@@ -257,7 +258,7 @@ nav img {
 @media only screen and (max-width: 475px) {
   .hero {
     padding: 0rem 5rem;
-    width: 90%;
+    width: 100%;
   }
 }
 .hero h1 {
@@ -268,7 +269,7 @@ nav img {
 @media only screen and (max-width: 475px) {
   .hero h1 {
     font-size: 3rem;
-    line-height: 3.75rem;
+    line-height: 4rem;
   }
 }
 .hero p {
@@ -283,6 +284,7 @@ nav img {
   .hero img {
     width: 100%;
     height: 100%;
+    margin: 4rem 0;
   }
 }
 
@@ -414,6 +416,11 @@ nav img {
 }
 .review p {
   line-height: 1.75rem;
+}
+@media only screen and (max-width: 475px) {
+  .review p {
+    line-height: 2rem;
+  }
 }
 .review span {
   display: flex;
