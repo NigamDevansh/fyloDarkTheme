@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+@import "./breakpoints";
+@import "./variables";
+@import "./classes";
+@import "./basicmixin";
+@import "./body";
+@import "./footer";
+
+header {
+  background-color: $introColor;
+  background-image: url(/images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 100%;
+  padding-bottom: 10rem;
+  @include responsive(phone) {
+    background-position-y: 100%;
+    padding-bottom: 0rem;
+  }
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  @include responsive(phone) {
+    padding: 2rem 3rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 5rem;
+    list-style-type: none;
+    @include responsive(phone) {
+      font-size: 8rem;
+    }
+
+    li:not(:last-child) {
+      margin-right: 5rem;
+      @include responsive(phone) {
+        margin-right: 3rem;
+      }
+    }
+  }
+  img {
+    height: 4rem;
+    width: 13rem;
+    @include responsive(phone) {
+      height: 3.3rem;
+      width: 10rem;
+    }
+  }
+}
+.hero {
+  @include alignAndMargin();
+  width: 75%;
+  padding: 0rem 20rem;
+  @include responsive(phone) {
+    padding: 0rem 5rem;
+    width: 90%;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5.5rem;
+    @include responsive(phone) {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+  }
+  p {
+    // font-size: 1.4rem;
+    padding: 0 15rem;
+    @include responsive(phone) {
+      padding: 0rem;
+    }
+  }
+  @include responsive(phone) {
+    img {
+      width: 45rem;
+      height: 35rem;
+    }
+  }
+}
+
+.sectionFeatures {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  text-align: center;
+  @include responsive(phone) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.feature {
+  padding: 1rem 7rem;
+  @include responsive(phone) {
+    margin-bottom: 5rem;
+    padding: 1rem 5rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  @include responsive(phone) {
+    img {
+      height: 7rem;
+    }
+  }
+}
+.mainFeature {
+  width: 75%;
+  @include flexCenter();
+  margin: 0 auto;
+  @include responsive(phone) {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    img:not(:last-child) {
+      width: 45rem;
+      height: 35rem;
+      margin-bottom: 10rem;
+    }
+  }
+}
+.content {
+  padding: 0 0 0 3rem;
+  @include responsive(phone) {
+    padding: 0;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    // font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  .arrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+    color: hsl(176, 68%, 64%);
+    cursor: pointer;
+    img {
+      padding-left: 0.5rem;
+    }
+  }
+}
+.reviews {
+  width: 75%;
+  @include flexCenter();
+  margin: 0 auto;
+  position: relative;
+  @include responsive(phone) {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.quotes {
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+  left: -1rem;
+  @include responsive(phone) {
+    width: 6rem;
+    height: 5rem;
+  }
+}
+.review {
+  background-color: $testimonialBackground;
+  font-size: 1.6rem;
+  padding: 5rem 4rem 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: rgba(32, 42, 60, 0.3) 5px 5px, rgba(32, 42, 60, 0.2) 10px 10px,
+    rgba(32, 42, 60, 0.15) 15px 15px, rgba(32, 42, 60, 0.1) 20px 20px,
+    rgba(32, 42, 60, 0.05) 25px 25px;
+  @include responsive(phone) {
+    margin-bottom: 5rem !important;
+  }
+  p {
+    // font-size: 1.4rem;
+    line-height: 1.75rem;
+  }
+
+  span {
+    @include flexCenter();
+    justify-content: left;
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.18rem;
+    img {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+  }
+}
+.signup {
+  width: 50%;
+  @include flexCenter();
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+  @include responsive(phone) {
+    width: 90%;
+  }
+}
+.signupForm {
+  margin-bottom: -15%;
+  background-color: $testimonialBackground;
+  padding: 4rem 5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  @include responsive(phone) {
+    padding: 2rem 2rem;
+    margin-bottom: -55%;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+    @include responsive(phone) {
+      font-size: 3rem;
+    }
+  }
+  p {
+    // font-size: 1.4rem;
+    margin-bottom: 3rem;
+    padding: 0 3rem;
+  }
+}
+form {
+  display: flex;
+  z-index: 10;
+  justify-content: space-around;
+  @include responsive(phone) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  input[type="text"] {
+    width: 65%;
+    border: none;
+    outline: none;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    font-size: small;
+    &:focus::placeholder {
+      color: transparent;
+    }
+    @include responsive(phone) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+  input[type="button"] {
+    padding: 0 2.5rem !important;
+    border: none;
+    @include responsive(phone) {
+      width: 100%;
+      padding: 1rem 5rem !important;
+    }
+  }
+}

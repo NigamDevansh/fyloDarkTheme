@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50%;
+  text-decoration: none;
+  @include responsive(phone) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: $mainBackground;
+  color: white;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-family: "raleway", sans-serif;
+}
+p {
+  font-size: 1.4rem;
+  @include responsive(phone) {
+    font-size: 1.8rem;
+  }
+}

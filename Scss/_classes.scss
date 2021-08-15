@@ -1,0 +1,58 @@
+.margin_bottom {
+  margin-bottom: 1.9rem;
+}
+.margin_topnegative {
+  margin-top: -0.5rem;
+}
+.margin_bottomBig {
+  margin-bottom: 10rem !important;
+}
+.padding_bottom {
+  padding-bottom: 10rem;
+}
+.margin_Right {
+  margin-right: 3rem;
+  @include responsive(phone) {
+    margin-right: 0rem;
+  }
+}
+.margin_top {
+  margin-top: 10rem !important;
+}
+.icon_Size {
+  font-size: 2rem;
+  transition: all 0.5s ease;
+  &:hover {
+    color: grey;
+  }
+  @include responsive(phone) {
+    font-size: 3rem;
+  }
+}
+.margin_Right2rem {
+  margin-right: 2rem;
+}
+
+.cta {
+  background-image: linear-gradient(
+    to right,
+    hsl(176, 68%, 64%) 0%,
+    hsl(198, 60%, 50%) 51%,
+    hsl(176, 68%, 64%) 100%
+  );
+  padding: 1rem 6rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 2rem;
+  display: inline-block;
+  &:hover {
+    background-position: right center;
+    color: #fff;
+  }
+  @include responsive(phone) {
+    font-size: 1.6rem;
+  }
+}

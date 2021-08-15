@@ -1,0 +1,9 @@
+@mixin alignAndMargin {
+  text-align: center;
+  margin: auto;
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
