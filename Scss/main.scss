@@ -15,8 +15,8 @@ header {
   background-position-y: 100%;
   padding-bottom: 10rem;
   @include responsive(phone) {
-    height: 90vh;
     background-position-y: 100%;
+    background-size: 140% 40rem;
   }
 }
 nav {
@@ -58,7 +58,7 @@ nav {
   width: 75%;
   padding: 0rem 20rem;
   @include responsive(phone) {
-    padding: 0rem 5rem;
+    padding: 0rem;
     width: 90%;
   }
   h1 {
@@ -81,6 +81,7 @@ nav {
     img {
       width: 100%;
       height: 100%;
+      margin: 5rem 0;
     }
   }
 }
@@ -92,7 +93,7 @@ nav {
   margin: 0 auto;
   text-align: center;
   @include responsive(phone) {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
