@@ -1,5 +1,5 @@
 .loader-wrapper {
-  background-color: rgb(46, 46, 46);
+  background-color: honeydew;
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -11,8 +11,8 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   position: fixed;
   z-index: 9999;
 }
@@ -21,9 +21,9 @@
 .loader .loader-inner-3,
 .loader .loader-inner-4 {
   display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
   position: absolute;
 }
 .loader .loader-inner-1:before,
@@ -32,9 +32,9 @@
 .loader .loader-inner-4:before {
   content: "";
   display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 20px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
   position: absolute;
   right: 0;
   animation-name: loading-1;
@@ -50,7 +50,7 @@
 }
 
 .loader .loader-inner-1:before {
-  background: $testimonialBackground;
+  background: hsl(219, 34%, 26%);
 }
 
 .loader .loader-inner-2 {
@@ -60,7 +60,7 @@
 }
 
 .loader .loader-inner-2:before {
-  background: $introColor;
+  background: hsl(219, 28%, 10%);
 }
 
 .loader .loader-inner-3 {
@@ -70,7 +70,7 @@
 }
 
 .loader .loader-inner-3:before {
-  background: $mainBackground;
+  background: hsl(215, 50%, 20%);
 }
 
 .loader .loader-inner-4 {
@@ -80,21 +80,21 @@
 }
 
 .loader .loader-inner-4:before {
-  background: $footerBackground;
+  background: hsl(217, 49%, 38%);
 }
 @keyframes loading-1 {
   0% {
-    width: 20px;
+    width: 2rem;
     right: 0;
   }
 
   30% {
-    width: 120px;
-    right: -100px;
+    width: 12rem;
+    right: -10rem;
   }
 
   60% {
-    width: 20px;
-    right: -100px;
+    width: 2rem;
+    right: -10rem;
   }
 }
