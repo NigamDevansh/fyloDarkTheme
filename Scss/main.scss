@@ -61,6 +61,7 @@ nav {
   @include responsive(phone) {
     padding: 0rem;
     width: 90%;
+    height: 100%;
   }
   h1 {
     font-size: 4rem;

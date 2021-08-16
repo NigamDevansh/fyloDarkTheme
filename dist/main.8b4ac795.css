@@ -372,6 +372,7 @@ nav img {
   .hero {
     padding: 0rem;
     width: 90%;
+    height: 100%;
   }
 }
 .hero h1 {
